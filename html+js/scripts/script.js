@@ -88,7 +88,7 @@ const expires = "expires=" + date.toUTCString();
 
 document.cookie = "userData=" + jsonData + ";" + expires + ";path=/";
 
-alert('Сохранено в куки:' + jsonData);
+alert('Сохранено в куки');
 
   
 }
