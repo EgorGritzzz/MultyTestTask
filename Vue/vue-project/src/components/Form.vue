@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <form id="forma">
-        <!-- Город -->
+      
         <label for="city">Город:</label>
         <select id="city" name="city" @change="updateShops">
             <option value="">Выберите город</option>
@@ -10,13 +10,13 @@
             
         </select>
 
-        <!-- Цех -->
+       
         <label for="shop">Цех:</label>
         <select id="shop" name="shop" @change="updateEmployees">
             <option value="">Сначала выберите город</option>
         </select>
 
-        <!-- Сотрудник -->
+        
         <label for="employee">Сотрудник:</label>
         <select id="employee" name="employee">
             <option value="">Сначала выберите цех</option>
