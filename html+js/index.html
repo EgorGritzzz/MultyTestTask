@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма выбора</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h1>Форма выбора</h1>
+    <form id="form">
+        <!-- Город -->
+        <label for="city">Город:</label>
+        <select id="city" name="city" onchange="updateShops()">
+            <option value="">Выберите город</option>
+            <option value="moscow">Москва</option>
+            <option value="spb">Санкт-Петербург</option>
+            
+        </select>
+
+        <!-- Цех -->
+        <label for="shop">Цех:</label>
+        <select id="shop" name="shop" onchange="updateEmployees()">
+            <option value="">Сначала выберите город</option>
+        </select>
+
+        <!-- Сотрудник -->
+        <label for="employee">Сотрудник:</label>
+        <select id="employee" name="employee">
+            <option value="">Сначала выберите цех</option>
+        </select>
+
+        <label for="team">Бригада</label>
+        <select id="team" name="team">
+            <option value="">Выберите бригаду</option>
+            <option value="Бригада 1">Бригада1</option>
+            <option value="Бригада 2">Бригада 2</option>
+            <option value="Бригада 3">Бригада 3</option>
+            
+        </select>
+
+        <label for="time">Смена:</label>
+        <select id="time" name="time">
+            <option value="">Выберите смену</option>
+            <option value="Утренняя">Утренняя</option>
+            <option value="Вечерняя">Вечерняя</option>
+            
+        </select>
+
+        <button type="button" onclick="saveData()">Отправить</button>
+    </form>
+
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
