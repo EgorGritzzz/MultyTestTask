@@ -81,9 +81,9 @@ function saveData() {
 
     let jsonData = JSON.stringify(dataObj);
     
-    const daysToExpire = 7;
+    const daysToSave = 7;
     const date = new Date();
-   date.setTime(date.getTime() + (daysToExpire * 24 * 60 * 60 * 1000));
+   date.setTime(date.getTime() + (daysToSave * 24 * 60 * 60 * 1000));
 const expires = "expires=" + date.toUTCString();
 
 document.cookie = "userData=" + jsonData + ";" + expires + ";path=/";
